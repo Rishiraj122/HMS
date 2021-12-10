@@ -16,7 +16,7 @@ const { db } = require('./models/notice.model')
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect('')
+mongoose.connect('mongodb+srv://hello:hello@cluster0.klx12.mongodb.net/hello?retryWrites=true&w=majority')
 
 app.post('/api/register', async (req, res) => {
 	console.log(req.body)
@@ -112,6 +112,6 @@ app.post('/api/quote', async (req, res) => {
 	}
 })
 
-app.listen(1337, () => {
+app.listen(process.env.PORT||1337, () => {
 	console.log('Server started')
 })

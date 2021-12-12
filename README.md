@@ -18,7 +18,7 @@ nd: npm start
 1. After starting, localhost:3000 will pop up. There's nothing in that page. 
 2. For registration, you can check localhost:3000/register
 3. For login, visit localhost:3000/login
-4. For notice, visit localhost: 3000/notice
+4. For notice, visit localhost:3000/notice
 
 -----------------------------------------------------------------------------------------------------------------------
 
